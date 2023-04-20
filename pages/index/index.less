@@ -1,0 +1,142 @@
+.content {
+	min-height: 100px;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px 20px;
+    position: relative;
+	.options {
+        width: 100%;
+        position: fixed;
+        padding: 0 20px;
+        left: 0;
+        top: 0;
+		display: flex;
+		justify-content: space-between;
+		color: #0a7be5;
+		font-size: 32rpx;
+		font-weight: 400;
+        background-color: #fff;
+        z-index: 1000;
+        .add-msg{
+            width: 25px;
+            height: 25px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+	}
+	.title {
+		font-size: 60rpx;
+		font-weight: 600;
+		color: #000;
+		margin: 5px 0 5px;
+	}
+	.input-box {
+		display: flex;
+		align-items: center;
+		background-color: #eee;
+		border-radius: 14px;
+		height: 40px;
+		padding-left: 10px;
+        margin-bottom: 20px;
+		box-sizing: border-box;
+		.uni-input {
+			margin-left: 5px;
+		}
+	}
+	.message-list {
+		.uni-list-cell {
+			height: 100px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			.imgs {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+			}
+			.right-contain {
+				display: flex;
+				height: 100%;
+				padding: 10px 15px 10px 0;
+				box-sizing: border-box;
+				align-items: flex-start;
+				margin-left: 10px;
+				width: 100%;
+				border-top: 2px solid #eee;
+                margin-right: -18px;
+				// border-bottom: 2px solid #eee;
+				.right {
+					width: 100%;
+					flex: none;
+					.top-number {
+						display: flex;
+						width: 100%;
+						justify-content: space-between;
+                        align-items: center;
+						.number {
+							display: inline-block;
+							color: #000;
+							font-weight: 600;
+							font-size: 36rpx;
+						}
+                        .time-box{
+                            display: flex;
+                            align-items: center;
+                            .time{
+                                color: #8c8c8e;
+                            }
+                            .arrow{
+                                width: 15px;
+                                height: 18px;
+                                margin-right: -5px;
+                            }
+                        }
+                        
+					}
+					.desc {
+						color: #8c8c8e;
+						font-size: 32rpx;
+						width: 100%;
+                        font-weight: 400;
+						width: 100%;
+						overflow: hidden;
+						-webkit-line-clamp: 2;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						word-break: break-all;
+						word-wrap: break-word;
+					}
+				}
+			}
+		}
+	}
+    .del-options{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        color: #0a7be5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px 30px;
+        box-sizing: border-box;
+        font-size: 32rpx;
+        font-weight: 400;
+        border-top: 1px solid #dbdbdb;
+    }
+}
+
+/deep/.uni-checkbox-input{
+    border-radius: 50%!important;
+}
+/deep/ uni-actionsheet .uni-actionsheet__cell{
+    color: red;
+    -webkit-text-size-adjust: 100%
+}
+
